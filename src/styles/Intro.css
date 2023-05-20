@@ -1,0 +1,81 @@
+#intro {
+    z-index: 200;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 15rem;
+    padding-left: 10rem;
+    min-height: 100vh;
+    color: rgb(231, 231, 231);
+}
+
+.intro-title {
+    font-family: "RobotoMono", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    /* padding-bottom: 1rem; */
+    transition: font-size 0.4s;
+}
+
+.intro-title:hover {
+    background-color: rgba(172, 83, 24, 0.1);
+    font-size: 2.5rem;
+}
+
+.intro-name {
+    font-family: "RobotoMono", sans-serif;
+    font-weight: bold;
+    color: rgb(232, 114, 35);
+}
+
+.intro-subtitle {
+    /* margin-top: -36px; */
+    font-family: "RobotoMono", sans-serif;
+    font-size: 1.5rem;
+}
+
+.intro-description {
+    font-family: "RobotoMono", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    max-width: 50%;
+    text-align: justify;
+    transition: font-size 0.4s, max-width 0.4s;
+}
+
+.intro-description:hover {
+    background-color: rgba(172, 83, 24, 0.1);
+    font-size: 1.01rem;
+    max-width: 55%;
+}
+
+@keyframes grow {
+    0% {
+        font-size: 2rem;
+    }
+    
+    50% {
+        font-size: 2.1rem;
+    }
+
+    100% {
+        font-size: 2.5rem;
+    }
+}
+
+/* .intro-contact {
+font-size: 22px;
+font-weight: bolder;
+font-family: "RobotoMono", sans-serif;
+padding: 10px 30px;
+cursor: pointer;
+border: 1px solid var(--green-bright);
+border-radius: 4px;
+}
+
+.intro-contact:hover {
+background-color: var(--lightest-navy);
+} */
+
