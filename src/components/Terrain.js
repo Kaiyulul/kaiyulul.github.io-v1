@@ -26,7 +26,7 @@ const Sketch = p5 => {
     };
 
     p5.draw = () => {
-        flying -= 0.03;
+        flying -= 0.04;
         let yoff = flying;
         for (let y = 0; y < rows; y++) {
             let xoff = 0;
@@ -40,7 +40,7 @@ const Sketch = p5 => {
         p5.background(20);
         p5.rotateX(p5.PI / 2.4);
         p5.fill(232, 114, 35, 100);
-        p5.translate(-w / 2, -h / 4);
+        p5.translate(-w / 2, -h / 20);
         for (let y = 0; y < rows - 1; y++) {
             p5.beginShape(p5.QUAD_STRIP);
             for (let x = 0; x < cols; x++) {

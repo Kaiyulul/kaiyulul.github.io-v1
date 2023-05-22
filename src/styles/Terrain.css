@@ -1,4 +1,13 @@
 #terrain {
+    z-index: -9999;
+    position: absolute;
+    display: flex;
     overflow: hidden;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #terrain {
+        overflow: scroll;
+    }
 }
