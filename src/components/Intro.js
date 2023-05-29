@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Intro.css";
+// import Terrain from "./Terrain.js";
 
 class Intro extends React.Component {
     constructor() {
@@ -19,15 +20,16 @@ class Intro extends React.Component {
     render() {
         return (
             <div id="intro">
-                <div className="intro-description">
+                <div className="intro-description fade">
                     {"howdy! I am"}
                 </div>
-                <div className="intro-title intro-name">
-                    {"KYLE TANDOC"}
+                <div className="intro-name fade">
+                    <span data-value="Kyle Tandoc"> {"Kyle Tandoc"} </span>
                 </div>
-                <div className="intro-description">
-                    I'm an aspiring software engineer with a background in full-stack and blockchain development, artificial intelligence, generative art, and information security. 
+                <div className="intro-description fade">
+                    {"I am currently building my web portfolio using Create React. This is mostly a testing ground and a fun project while I am gradwaiting and unemployed, but please check out what I have so far!"}
                 </div>
+                {/* <Terrain /> */}
             </div>
         )
     }

@@ -1,10 +1,11 @@
 #socials {
+    /* border: white solid 1px; */
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     padding-top: 9rem;
     position: absolute;
-    display: flex;
     align-items: center;
-    flex-direction: column;
     color: whitesmoke;
 }
 
@@ -24,10 +25,10 @@
 
 @media only screen and (max-width: 600px) {
     #socials {
-        z-index: 9999;
+        /* border: white solid 1px; */
         width: 100%;
         padding: unset;
-        margin-top: 65%;
+        margin-top: 100%;
         align-items: center;
         justify-content: center;
         flex-direction: row;
